@@ -1,34 +1,54 @@
-# catalogo-laravel
+# Proyecto php en Laravel
 
-Este es un proyecto ejemplo de catálogo CRUD construido en Laravel, usando rutas, controladores, migraciones, vistas Blade y control de versiones con Git y GitHub.  
-Para tareas educativas y de práctica del patrón MVC.
+Aplicación web CRUD desarrollada con **Laravel** como ejercicio educativo. El proyecto implementa funcionalidades de gestión de productos utilizando rutas, controladores, migraciones a bases de datos y plantillas Blade, integrándose completamente con Git y GitHub.
 
-## Instalación y primeros pasos
+## Configuración Inicial
 
-1. Clona el repositorio:
-git clone https://github.com/krosty1722/catalogo-laravel.git cd catalogo-laravel
+### Requisitos previos
+- PHP 8.1
+- Composer
+- Git
 
-2. Instala dependencias:
+### Pasos de instalación
+
+**1. Descargar el proyecto:**
+```bash
+git clone https://github.com/Action-boom/P_Laravel.git
+cd P_Laravel
+```
+
+**2. Instalar dependencias de PHP:**
+```bash
 composer install
+```
 
-3. Crea el archivo de base de datos y configura `.env`:
-copy .env.example .env type nul > database\database.sqlite
+**3. Preparar la base de datos:**
+```bash
+copy .env.example .env
+type nul > database\database.sqlite
+```
 
-Edita en el archivo `.env`:
-DB_CONNECTION=sqlite DB_DATABASE=database/database.sqlite
+Luego, configura el archivo `.env`:
+```
+DB_CONNECTION=sqlite
+DB_DATABASE=database/database.sqlite
+```
 
-4. Genera la clave:
+**4. Generar clave de aplicación:**
+```bash
 php artisan key:generate
+```
 
-5. Ejecuta las migraciones:
+**5. Ejecutar migraciones:**
+```bash
 php artisan migrate
+```
 
-6. Sirve la aplicación en modo desarrollo:
+**6. Iniciar servidor:**
+```bash
 php artisan serve
+```
 
-Y abre [http://127.0.0.1:8000](http://127.0.0.1:8000)
+Accede a la aplicación en: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
----
-
-- Puedes agregar tu nombre, descripción u objetivos de la práctica.
 
